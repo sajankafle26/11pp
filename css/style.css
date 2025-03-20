@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul 
+{
+    list-style: none;
+}
+a 
+{
+    text-decoration: none;
+}
+body 
+{
+    background: #F3F4F8;
+    font-family: "Sofia Sans", serif;
+}
+.py 
+{
+    padding: 10px 0;
+}
+:root 
+{
+    --brand: #172D6C;
+    --w: #fff;
+}
+.con 
+{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0px 15px;
+}
+.logo 
+{
+    width: 50px;
+}
+header 
+{
+    background: var(--w);
+    box-shadow: 2px 6px 8px -6px rgba(24,39,75,.12),0 8px 16px -6px rgba(24,39,75,.08);
+}
+.grid
+{
+    display: grid;
+    align-items: center;
+}
+.col-1 
+{
+    grid-template-columns: 1fr;
+}
+.col-2 
+{
+    grid-template-columns: 1fr 1fr;
+}
+.col-3 
+{
+    grid-template-columns: auto auto auto;
+}
+header li 
+{
+    display: inline;
+    padding: 10px;
+}
+.info 
+{
+    text-align: right;
+}
+.gap-2 
+{
+    gap: 10px;
+}
+.flex 
+{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.btn
+{
+    background: var(--brand);
+    color: var(--w);
+    padding: 10px;
+}
+.w 
+{
+    width: 100%;
+}
+.br 
+{
+    border-radius: 12px;
+}
+.search
+{
+    background: var(--w);
+    box-shadow: 2px 6px 8px -6px rgba(24,39,75,.12),0 8px 16px -6px rgba(24,39,75,.08);
+    padding: 25px;
+}
+.jc 
+{
+    justify-content: end;
+}
+.way li 
+{
+    background: #F3F4F8;
+    padding: 10px;
+}
+.search input{
+    border: 1px solid #999;
+    padding: 15px;
+    width: 100%;
+}
+.gridr
+{
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.card
+{
+    background: var(--w);
+    transition: 0.5s ease-in;
+}
+.card .py 
+{
+    padding: 20px;
+}
+.card:hover 
+{
+    transform: scale(1.05);
+}
+footer
+{
+    background: var(--brand);
+    color: var(--w);
+    text-align: center;
+    padding: 40px ;
+    margin-top: 100px;
+    position: relative;
+}
+footer li 
+{
+    display: inline;
+    padding: 15px;
+}
+.flogo
+{
+    background: var(--w);
+    width: 90px;
+    position: absolute;
+    left: 50%;
+    top: -40%;
+    transform: translateX(-50%);
+}
+.mobile{ display: none;}
+
+@media(max-width: 768px)
+{
+    .flex{ display: block;}
+    .search input{ margin: 10px 0;}
+    .aa{ display: none}
+    .mobile{ display: grid; align-items: center;}
+    header .grid{ display: none;}
+    .fill{ text-align: right;}
+}
